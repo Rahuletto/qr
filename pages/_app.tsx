@@ -32,10 +32,10 @@ function MyApp({ Component, pageProps: { ...pageProps } }: AppProps) {
         <meta charSet="UTF-8"></meta>
         <meta
           name="description"
-          content="Just a regular ol- secure password generator."
+          content="Just a regular ol- qr code generator"
         ></meta>
         <meta name="viewport" content="width=device-width"></meta>
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg"></link>
+        <link rel="icon" type="image/svg+xml" href="/qrmake.svg"></link>
         <title>QR Generator</title>
       </Head>
 
