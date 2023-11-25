@@ -1,6 +1,7 @@
 // NextJS Stuff
 import { Analytics } from '@vercel/analytics/react';
 import type { AppProps } from 'next/app';
+import Head from 'next/head';
 
 // Fonts
 import { Space_Grotesk } from 'next/font/google';
@@ -19,16 +20,27 @@ function MyApp({ Component, pageProps: { ...pageProps } }: AppProps) {
 
   return (
     <>
-        <style jsx global>
-          {`
+      <style jsx global>
+        {`
             html {
               --root-font: ${sg.style.fontFamily};=
             }
           `}
-        </style>
+      </style>
 
-        <Component className={sg.variable} {...pageProps} />
-        <Analytics />
+      <Head>
+        <meta charSet="UTF-8"></meta>
+        <meta
+          name="description"
+          content="Just a regular ol- secure password generator."
+        ></meta>
+        <meta name="viewport" content="width=device-width"></meta>
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg"></link>
+        <title>QR Generator</title>
+      </Head>
+
+      <Component className={sg.variable} {...pageProps} />
+      <Analytics />
     </>
   );
 }

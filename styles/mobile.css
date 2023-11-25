@@ -1,0 +1,23 @@
+@media only screen and (max-width: 750px) {
+    input {
+        border-radius: 8px !important;
+    }
+
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+        align-items: center;
+    }
+
+    button {
+        border-radius: 8px !important;
+        border-width: 1.5px !important;
+        width: fit-content;
+    }
+    
+    .one {
+        display: none;
+    }
+}
